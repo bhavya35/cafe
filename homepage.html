@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chapters & Coffee</title>
     <style>
+        <!---background image--->
+        body{
+            background-color: #fff8f0;
+        }
+
+        
         .navbar{
             display: flex;
             justify-content: center;
-
+ 
         }
         .navbar a{
             color:rgb(rgb(189, 78, 78);)
@@ -17,15 +23,61 @@
 
     
         }
-        
-        h1{
-            color:#4E342E
+
+        .mainheading{
             text-align: center;
+            font-size: 36px;
+            color:#000000;
+            margin-top: 20px;
+
         }
+
+        
+        .banner-image{
+            width: 100%;
+            height: auto;
+            margin-top: 0%;
+            
+        }
+        <!--about us-->
+
+        .about-section{
+            display: flex;
+            
+            justify-content: space-between;
+            padding: 20px ;
+            
+        }
+
+
+        .about-content{
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .about-content h2{
+            font-size: 36px;
+            color:#3e2723;
+            margin-bottom: 20px;
+    
+        }
+        .about-content p{
+            font-size: 20px;
+            color: #4e342e;
+            text-align: justify;
+            line-height: 1.6;
+        
+
+        }
+        
+        
     </style>
 </head>
 <body>
-    <h1>Chapters & Coffee</h1>
+    <!--heading-->
+    <h1 class="mainheading">Chapters & Coffee</h1>
+
+    <!--navigation -->
     <nav class="navbar">
         <a href="#">Home</a>
         <a href="#">Menu</a>
@@ -34,5 +86,22 @@
         <a href="#">Gallery</a>
 
     </nav>
+
+    <!--image-->
+    <img src="img\cafecc.jpg" alt="Chapter & Coffee" class="banner-image">
+
+    <!--about us-->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p >
+                Chapters & Coffee is a cozy café crafted for book lovers and coffee dreamers.
+Blending the warmth of a neighborhood café with the charm of a quiet library, it’s your place to read, relax, write, or simply enjoy a story with every sip.
+
+<b>Come write your next chapter with us.</b>
+            </p>
+        </div>
+    </section>
+
 </body>
 </html>
